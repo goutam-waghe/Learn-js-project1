@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>close model</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: teal;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        position: relative;
+        height: 100vh;
+    }
+
+    .btns {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        width: 60%;
+        margin: 50px 0px;
+
+
+
+
+
+    }
+
+    .btns button {
+        color: rgb(30, 30, 30);
+        background-color: white;
+        padding: 15px 40px;
+        border-radius: 20px;
+        border: none;
+        font-weight: 600;
+        font-size: 1.6rem;
+        cursor: pointer;
+
+    }
+
+    .model {
+        width: 400px;
+        height: 400px;
+        background-color: white;
+        padding: 20px 60px;
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(2px);
+    }
+
+    .model button {
+        align-self: end;
+
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+</style>
+
+<body>
+    <div class="btns">
+        <button class="show-model" id="model-1">Model 1</button>
+        <button class="show-model" id="model-2">Model 2</button>
+        <button class="show-model" id="model-3">Model 3</button>
+    </div>
+
+    <div class="model hidden">
+        <button class="close-model">&times;</button>
+        <h1>Model Window</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque omnis, quis at id accusamus quod
+            similique iusto accusantium ipsa praesentium sed exercitationem ea animi sapiente minus eum cum veritatis
+            eaque asperiores nobis blanditiis quibusdam nisi labore quia. Quibusdam minus ab error ut facilis,
+            perferendis numquam laudantium cumque fugiat cum maxime, tenetur in magnam itaque quae animi tempora vitae
+            sapiente fugit totam. Deserunt, beatae illo provident reiciendis dolorem id commodi quas quis nulla facilis,
+            minima culpa atque, ratione quos illum voluptas! Consequatur, architecto facere quasi explicabo facilis
+            laudantium eum dolore velit ipsum, maxime ut reiciendis pariatur laborum vero tenetur ipsam provident.</p>
+
+    </div>
+    <div class="overlay hidden"></div>
+
+
+
+    <script src="sscript.js"></script>
+</body>
+
+</html>
